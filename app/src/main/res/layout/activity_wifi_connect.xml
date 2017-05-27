@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.ider.guidedeyu.MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+        android:text="未连接wifi是否进行连接……"
+        android:textColor="#fff"/>
+    <com.ider.guidedeyu.view.BaseRelative
+        android:id="@+id/set"
+        android:focusable="true"
+        android:layout_marginTop="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:background="@drawable/selectbc"
+        android:tag="1"/>
+
+    <com.ider.guidedeyu.view.BaseRelative
+        android:id="@+id/pass"
+        android:focusable="true"
+        android:layout_marginTop="370dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:background="@drawable/selectbc"
+        android:tag="2"/>
+
+    <com.ider.guidedeyu.view.BaseRelative
+        android:id="@+id/notice"
+        android:focusable="true"
+        android:layout_marginTop="450dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:background="@drawable/selectbc"
+        android:tag="3"/>
+
+</RelativeLayout>

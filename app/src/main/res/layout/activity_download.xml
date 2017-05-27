@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_download"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.ider.guidedeyu.MainActivity">
+    <TextView
+        android:id="@+id/updating"
+        android:focusable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:text="正在升级系统中，不要中断电源，中断电源会导致无法进入系统。"
+        android:textColor="#fff"/>
+    <TextView
+        android:id="@+id/progress_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="400dp"/>
+    <TextView android:id="@+id/download_info_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="200dp"
+        android:paddingRight="5dip"
+        />
+    <TextView android:id="@+id/download_info_remaining"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="200dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ProgressBar android:id="@+id/progress_horizontal"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dip"
+        android:paddingBottom="6dip"
+        android:layout_marginTop="350dp"
+        android:layout_centerHorizontal="true"
+        android:max="100"
+        android:progress="0" />
+    <com.ider.guidedeyu.view.BaseRelative
+        android:id="@+id/to_update"
+        android:focusable="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selectbc"
+        android:tag="5"></com.ider.guidedeyu.view.BaseRelative>
+
+</RelativeLayout>
