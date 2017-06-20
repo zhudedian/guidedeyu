@@ -159,7 +159,7 @@ public class DownloadActivity extends FullscreenActivity implements View.OnClick
                     Intent intent = new Intent();
                     intent.setComponent(new ComponentName("android.rockchip.update.service", "android.rockchip.update.service.UpdateAndRebootActivity"));
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    intent.putExtra("android.rockchip.update.extra.IMAGE_PATH", "/mnt/usb_storage/USB_DISK1/udisk0/update.zip");
+                    intent.putExtra("android.rockchip.update.extra.IMAGE_PATH", "/mnt/internal_sd/update.zip");
                     startActivity(intent);
                     finish();
                 }
